@@ -155,6 +155,7 @@ def create_spend_chart(categories) :
             y = y + 1
         x = x + 1
     chart = chart + vertical_categories
+    return chart
 
 t1 = Category('Spending')
 t2 = Category('Groceries')
@@ -163,4 +164,4 @@ t1.withdraw(1000, "Long description of lots of things test")
 t2.deposit(10000, "Test deposit")
 t2.withdraw(5000, "Long description of lots of things test")
 
-create_spend_chart([t1, t2])
+print(create_spend_chart([t1, t2]))
